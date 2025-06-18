@@ -1,1 +1,1 @@
-# JOVAC-HOMEWORK1
+I am currently participating in the Jovac Full Stack Web Development course provided by my college. This program offers practical, hands-on experience in developing dynamic web applications using technologies such as HTML, CSS, JavaScript, React, Node.js, and MongoDB. This repository showcases the projects and assignments I have completed throughout the course, reflecting my progress and applied skills in full stack development.
