@@ -1,0 +1,27 @@
+The Garbage Collector (GC) in JavaScript is an automatic memory management feature
+ that detects and removes data no longer in use. By freeing up unused memory, 
+it ensures applications run efficiently and helps prevent memory leaks or performance 
+issues.
+
+--How the Garbage Collector Works:-
+The Mark-and-Sweep algorithm is a memory management technique used in JavaScript 
+to automatically clean up unused objects. It works by identifying which objects are still 
+accessible (reachable) and safely discarding those that are no longer needed, freeing up
+ memory in the process.
+This approach ensures efficient memory usage by marking active objects and then 
+sweeping away the inactive ones.
+
+--Benefits of Garbage Collection in JavaScript--
+:-Handles Memory Automatically – Developers don’t need to manually manage memory allocation or deallocation.
+:-Minimizes Memory Leaks – Automatically removes unused objects, reducing the chances of memory buildup.
+:-Enhances Performance – Keeps applications efficient by cleaning up memory that’s no longer in use.
+:-Boosts Code Safety – Prevents issues like invalid memory access or accidental overwrites.
+:-Simplifies Development – Takes care of complex memory tasks behind the scenes, making coding easier.
+
+Example:
+function displayMessage() {
+  let note = { text: "Garbage Collector!" };
+  console.log(note.text); // Output:  Garbage Collector!
+  // 'note' becomes unreachable after the function finishes
+}
+displayMessage();
