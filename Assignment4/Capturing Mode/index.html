@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="outer">
+  <div id="middle">
+    <div id="inner">
+      Click me!
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById("outer").addEventListener("click", () => {
+    console.log("outer clicked");
+  }, TransformStreamDefaultController);
+
+  document.getElementById("middle").addEventListener("click", () => {
+    console.log("middle clicked");
+    
+  }, true);
+
+  document.getElementById("inner").addEventListener("click", () => {
+    console.log("inner clicked");
+  }, true);
+</script>
+</body>
